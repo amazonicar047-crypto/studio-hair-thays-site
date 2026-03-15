@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Hair Thays Fernandes | Salão e Barbearia em Teresina - PI</title>
+    
+    <!-- SEO Local -->
+    <meta name="description" content="O melhor Studio de beleza e barbearia em Teresina - PI. Atendimento personalizado no Studio Hair Thays Fernandes. Agende seu horário!">
+    <meta name="keywords" content="salão de beleza em Teresina, barbearia em Teresina, studio de beleza em Teresina PI, Thays Fernandes, manicure, cabelo, barba">
+    <meta name="author" content="Studio Hair Thays Fernandes">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- AOS Animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fbf8ed',
+                            100: '#f4ecd1',
+                            200: '#e9d8a4',
+                            300: '#dbbe6f',
+                            400: '#ce9f41',
+                            500: '#d4af37', // Dourado principal
+                            600: '#b8862b',
+                            700: '#966425',
+                        },
+                        dark: '#0f0f0f',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .bg-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .floating-whatsapp {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full z-50 glass">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-gold-500 font-serif text-xl md:text-2xl font-bold tracking-wider">
+                THAYS FERNANDES
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                <a href="#home" class="hover:text-gold-500 transition">Início</a>
+                <a href="#sobre" class="hover:text-gold-500 transition">O Studio</a>
+                <a href="#servicos" class="hover:text-gold-500 transition">Serviços</a>
+                <a href="#contato" class="hover:text-gold-500 transition">Contato</a>
+            </div>
+
+            <a href="https://wa.me/5586981124677" target="_blank" class="bg-gold-500 hover:bg-gold-600 text-dark px-4 py-2 rounded-full text-xs font-bold uppercase transition">
+                Agendar
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-hero text-center px-6">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="font-serif text-4xl md:text-7xl mb-4 leading-tight">
+                Realce sua beleza no <br>
+                <span class="text-gold-500 text-3xl md:text-5xl">Studio Hair Thays Fernandes</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto italic">
+                Atendimento premium em beleza e barbearia no coração de Teresina.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5586981124677" class="bg-gold-500 hover:bg-gold-600 text-dark px-8 py-4 rounded-md font-bold text-lg transition flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle"></i> Agendar no WhatsApp
+                </a>
+                <a href="#servicos" class="border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-dark px-8 py-4 rounded-md font-bold text-lg transition">
+                    Ver Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-dark">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Espaço Studio Hair" class="rounded-lg shadow-2xl border-2 border-gold-500/30">
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <h2 class="font-serif text-3xl md:text-5xl text-gold-500 mb-6">O Studio</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 text-lg">
+                    Localizado em Teresina, o <strong>Studio Hair Thays Fernandes</strong> é um espaço dedicado à autoestima e ao bem-estar. Unimos o conceito de beleza feminina e os cuidados clássicos da barbearia em um só lugar.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    Nossa missão é proporcionar um atendimento personalizado, utilizando produtos de alta qualidade e técnicas modernas para garantir que cada cliente saia sentindo-se renovado e confiante.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="p-4 border border-gold-500/20 rounded-lg">
+                        <span class="text-gold-500 font-serif text-2xl block italic">Elegância</span>
+                    </div>
+                    <div class="p-4 border border-gold-500/20 rounded-lg">
+                        <span class="text-gold-500 font-serif text-2xl block italic">Conforto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 bg-[#151515]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-3xl md:text-5xl text-gold-500 mb-4">Nossos Serviços</h2>
+                <p class="text-gray-400">Excelência em cada detalhe para você e sua família.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="p-8 border border-gold-500/10 bg-dark rounded-xl hover:border-gold-500 transition group" data-aos="zoom-in" data-aos-delay="100">
+                    <i data-lucide="scissors" class="text-gold-500 w-12 h-12 mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4">Cabelo & Cor</h3>
+                    <p class="text-gray-500 mb-4">Cortes modernos, mechas, coloração e tratamentos capilares intensivos.</p>
+                    <ul class="text-sm text-gold-300 space-y-2">
+                        <li>• Hidratação Profunda</li>
+                        <li>• Design de Corte</li>
+                        <li>• Penteados</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="p-8 border border-gold-500/10 bg-dark rounded-xl hover:border-gold-500 transition group" data-aos="zoom-in" data-aos-delay="200">
+                    <i data-lucide="user" class="text-gold-500 w-12 h-12 mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4">Barbearia</h3>
+                    <p class="text-gray-500 mb-4">Corte masculino clássico e degradê, além de barba com toalha quente.</p>
+                    <ul class="text-sm text-gold-300 space-y-2">
+                        <li>• Corte Masculino</li>
+                        <li>• Barba Premium</li>
+                        <li>• Sobrancelha</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="p-8 border border-gold-500/10 bg-dark rounded-xl hover:border-gold-500 transition group" data-aos="zoom-in" data-aos-delay="300">
+                    <i data-lucide="sparkles" class="text-gold-500 w-12 h-12 mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4">Estética</h3>
+                    <p class="text-gray-500 mb-4">Serviços especializados para realçar seus traços e cuidar da sua pele.</p>
+                    <ul class="text-sm text-gold-300 space-y-2">
+                        <li>• Manicure e Pedicure</li>
+                        <li>• Design de Sobrancelhas</li>
+                        <li>• Maquiagem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Placeholder -->
+    <section class="py-20 bg-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl text-gold-500 mb-12">No Instagram</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gold-500/20">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Galeria">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gold-500/20">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Galeria">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gold-500/20">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Galeria">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gold-500/20">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Galeria">
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="https://instagram.com/studiohair_beauty" target="_blank" class="text-gold-500 hover:text-white transition flex items-center justify-center gap-2">
+                    <i data-lucide="instagram"></i> Siga-nos @studiohair_beauty
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-20 bg-gold-500 text-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl mb-12">O que nossos clientes dizem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-6 rounded-lg shadow-xl" data-aos="fade-up">
+                    <p class="italic mb-4">"Atendimento impecável! O melhor salão de Teresina. A Thays é uma profissional incrível."</p>
+                    <span class="font-bold">- Maria Silva</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <p class="italic mb-4">"Lugar agradável, café ótimo e o corte de cabelo ficou exatamente como eu queria."</p>
+                    <span class="font-bold">- João Pereira</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <p class="italic mb-4">"Profissionalismo e pontualidade. Super recomendo o Studio para quem busca qualidade."</p>
+                    <span class="font-bold">- Ana Costa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização & Contato -->
+    <section id="contato" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h2 class="font-serif text-3xl text-gold-500 mb-8">Onde estamos</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-gold-500 mt-1"></i>
+                            <p>Rua Costa Rica 580, em frente ao Condomínio Lyon<br>Teresina - PI, Brasil</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="phone" class="text-gold-500 mt-1"></i>
+                            <p>(86) 98112-4677</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="mail" class="text-gold-500 mt-1"></i>
+                            <p>thayslorita@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://instagram.com/studiohair_beauty" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold-500 hover:text-dark transition">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5586981124677" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold-500 hover:text-dark transition">
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 h-80 rounded-xl overflow-hidden shadow-2xl" data-aos="fade-left">
+                    <!-- Google Maps Embed (Centralizado na Rua Costa Rica 580, Teresina) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.123456789!2d-42.8!3d-5.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDAnMDAuMCJTIDQywKw0OCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gold-500/10 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6">
+            <p class="mb-2">© 2024 Studio Hair Thays Fernandes. Todos os direitos reservados.</p>
+            <p>Desenvolvido para excelência em Teresina - PI</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5586981124677" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25d366] text-white p-4 rounded-full shadow-2xl floating-whatsapp flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar Icones
+        lucide.createIcons();
+        
+        // Inicializar Animações
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Efeito de mudar header ao rolar
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
